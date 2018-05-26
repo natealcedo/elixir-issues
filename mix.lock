@@ -1,4 +1,15 @@
 %{
+  "certifi": {:git, "https://github.com/certifi/erlang-certifi", "750c09d46e706e2ab8e91fbb7164f0fbfbfc8e86", [tag: "2.3.1"]},
   "file_system": {:hex, :file_system, "0.2.5", "a3060f063b116daf56c044c273f65202e36f75ec42e678dc10653056d3366054", [:mix], [], "hexpm"},
+  "hackney": {:git, "https://github.com/benoitc/hackney.git", "e6d84f40a4d2d650659ac54dba99c0bcbbb86af4", []},
+  "httpoison": {:hex, :httpoison, "0.13.0", "bfaf44d9f133a6599886720f3937a7699466d23bb0cd7a88b6ba011f53c6f562", [:mix], [{:hackney, "~> 1.8", [hex: :hackney, repo: "hexpm", optional: false]}], "hexpm"},
+  "idna": {:git, "https://github.com/benoitc/erlang-idna", "24bf647c9b63f4521351896398edecf56f4843a8", [tag: "5.1.1"]},
+  "jsx": {:hex, :jsx, "2.9.0", "d2f6e5f069c00266cad52fb15d87c428579ea4d7d73a33669e12679e203329dd", [:mix, :rebar3], [], "hexpm"},
+  "metrics": {:git, "https://github.com/benoitc/erlang-metrics", "c6eb4dcf29f9e907539915e2ab996f40c2ec7e8e", [tag: "1.0.1"]},
+  "mimerl": {:git, "https://github.com/benoitc/mimerl", "678aba028a690da6822c87410d475841c048b6bf", [tag: "1.0.2"]},
   "mix_test_watch": {:hex, :mix_test_watch, "0.6.0", "5e206ed04860555a455de2983937efd3ce79f42bd8536fc6b900cc286f5bb830", [:mix], [{:file_system, "~> 0.2.1 or ~> 0.3", [hex: :file_system, repo: "hexpm", optional: false]}], "hexpm"},
+  "parse_trans": {:hex, :parse_trans, "3.2.0", "2adfa4daf80c14dc36f522cf190eb5c4ee3e28008fc6394397c16f62a26258c2", [:rebar3], [], "hexpm"},
+  "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm"},
+  "ssl_verify_fun": {:git, "https://github.com/deadtrickster/ssl_verify_fun.erl", "33406f6decdcb9f03cf1e69e34728a288af156a0", [tag: "1.1.1"]},
+  "unicode_util_compat": {:hex, :unicode_util_compat, "0.3.1", "a1f612a7b512638634a603c8f401892afbf99b8ce93a45041f8aaca99cadb85e", [:rebar3], [], "hexpm"},
 }

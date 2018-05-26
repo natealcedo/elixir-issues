@@ -2,7 +2,7 @@ defmodule IssuesTest do
   use ExUnit.Case
   doctest Issues
 
-  import Issues.CLI, only: [parse_args: 1]
+  import Issues.CLI, only: [parse_args: 1, run: 1]
 
   test ":help returned by passing with -h and --help options" do
     expected_result = :help
