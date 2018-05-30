@@ -19,9 +19,4 @@ defmodule Issues.GithubIssues do
   def handle_response({:ok, %{status_code: _, body: body}}) do
     {:error, :jsx.decode(body)}
   end
-
-  def convert_to_list_of_hashdicts(list) do
-    list
-    |> Enum.map(&Enum.into(&1, HashDict.new()))
-  end
 end
