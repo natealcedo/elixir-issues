@@ -7,6 +7,7 @@ use Mix.Config
 # file won't be loaded nor affect the parent project. For this reason,
 # if you want to provide default values for your application for
 # 3rd-party users, it should be done in your "mix.exs" file.
+config :issues, github_url: "https://api.github.com"
 
 # You can configure your application as:
 #
@@ -28,3 +29,5 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+
+# import_config "#{Mix.env}.exs"
