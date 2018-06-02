@@ -5,7 +5,6 @@ defmodule IssuesTest do
   import Issues.CLI,
     only: [
       parse_args: 1,
-      run: 1,
       sort_into_ascending_order: 1,
       convert_to_list_of_hashdicts: 1
     ]
