@@ -21,10 +21,11 @@ defmodule Issues.TableFormatter do
     column_widths = widths_of(data_by_columns)
     format = format_for(column_widths)
 
-    puts_one_line_in_column(headers, format) !==
-      column_widths
-      |> separator
-      |> IO.puts()
+    puts_one_line_in_column(headers, format)
+
+    column_widths
+    |> separator
+    |> IO.puts()
 
     puts_in_columns(data_by_columns, format)
   end
