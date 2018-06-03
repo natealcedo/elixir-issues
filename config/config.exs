@@ -8,7 +8,7 @@ use Mix.Config
 # if you want to provide default values for your application for
 # 3rd-party users, it should be done in your "mix.exs" file.
 config :issues, github_url: "https://api.github.com"
-
+config :logger, compile_time_purge_level: :info
 # You can configure your application as:
 #
 #     config :issues, key: :value

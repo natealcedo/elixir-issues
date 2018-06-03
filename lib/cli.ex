@@ -2,12 +2,6 @@ defmodule Issues.CLI do
   @default_count 4
   import Issues.TableFormatter, only: [print_table_for_columns: 2]
 
-  def main(argv) do
-    argv
-    |> parse_args
-    |> process
-  end
-
   def sort_into_ascending_order(list_of_issues) do
     Enum.sort(list_of_issues, fn i1, i2 -> i1["created_at"] <= i2["created_at"] end)
   end
@@ -42,7 +36,7 @@ defmodule Issues.CLI do
     System.halt(2)
   end
 
-  def run(argv) do
+  def main(argv) do
     argv
     |> parse_args
     |> process
@@ -52,6 +46,7 @@ defmodule Issues.CLI do
     parse_result = OptionParser.parse(argv, switches: [help: :boolean], aliases: [h: :help])
 
     case parse_result do
+      {[], [], []} -> :help
       {[help: true], _, _} -> :help
       {_, [user, project], _} -> {user, project, @default_count}
       {_, [user, project, count], _} -> {user, project, String.to_integer(count)}

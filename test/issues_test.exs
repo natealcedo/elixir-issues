@@ -9,6 +9,12 @@ defmodule IssuesTest do
       convert_to_list_of_hashdicts: 1
     ]
 
+  test ":help returned when nothing is passed " do
+    expected_result = :help
+    assert parse_args([]) == expected_result
+    assert parse_args([]) == expected_result
+  end
+
   test ":help returned by passing with -h and --help options" do
     expected_result = :help
     placeholder = "placeholder"
